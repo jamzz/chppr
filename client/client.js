@@ -46,6 +46,17 @@ class Layout extends React.Component {
 
   stateToggle(event) {
     this.setState({[event]: !this.state[event]});
+    this.setState({
+      dishName: '',
+      restaurantName: '',
+      dishDescription: '',
+      dishPrice: '',
+      dishRating: '',
+      photo: null,
+      photoUrl: null,
+      photoFile: null,
+      dishCat: null
+    });
   }
 
   categorySelect(category) {
