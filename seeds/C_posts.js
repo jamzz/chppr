@@ -12,9 +12,10 @@ exports.seed = function (knex, Promise) {
 			rest_name: "Liberty Kitchen",
 			price: 14,
 			picture_path: "/pictures/cajun_chicken_waffles.jpg",
+			dish_description: "These chicken and waffles were really good, but not very spicy.",
 			veggie: false,
 			gluten_free: false,
-			spicy: false,
+			spicy: true,
 			rating: 5
 		}),
 		
@@ -26,6 +27,7 @@ exports.seed = function (knex, Promise) {
 			rest_name: "Unit D Pizzeria",
 			price: 16,
 			picture_path: "/pictures/mushroom_pizza.jpg",
+			dish_description: "I don't usually like vegetarian stuff, but this muchroom pizza is really good.",
 			veggie: true,
 			gluten_free: false,
 			spicy: false,
@@ -39,6 +41,7 @@ exports.seed = function (knex, Promise) {
 			rest_name: "Hanabi",
 			price: 15,
 			picture_path: "/pictures/hoedeopbap.jpg",
+			dish_description: "Yeah man, this was prety good. I never tried this before.",
 			veggie: false,
 			gluten_free: true,
 			spicy: false,
@@ -52,6 +55,7 @@ exports.seed = function (knex, Promise) {
 			rest_name: "Noble Pig Sandwich Co.",
 			price: 9,
 			picture_path: "/pictures/duck_pastrami_sandwich.jpg",
+			dish_description: "It was.. pretty good. I liked the duck.",
 			veggie: false,
 			gluten_free: false,
 			spicy: false,
@@ -65,6 +69,7 @@ exports.seed = function (knex, Promise) {
 			rest_name: "Lick Honest Ice Creams",
 			price: 5,
 			picture_path: "/pictures/blueberry_swirl_ice_cream.jpg",
+			dish_description: "Mmm, them blueberries. So delish.",
 			veggie: true,
 			gluten_free: true,
 			spicy: false,
@@ -78,10 +83,11 @@ exports.seed = function (knex, Promise) {
 			rest_name: "Torchy's Tacos",
 			price: 5,
 			picture_path: "/pictures/green_chile_queso.jpg",
+			dish_description: "I dunno, the queso was alright I guess.",
 			veggie: true,
 			gluten_free: true,
 			spicy: true,
-			rating: 5
+			rating: 3
 		}),
 		knex('posts').insert({
 			user_id: 2,
@@ -91,10 +97,11 @@ exports.seed = function (knex, Promise) {
 			rest_name: "Shake Shack",
 			price: 8,
 			picture_path: "/pictures/shake_shack.jpg",
+			dish_description: "Best burger in Austin. ",
 			veggie: false,
 			gluten_free: false,
 			spicy: false,
-			rating: 4
+			rating: 5
 		}),
 		knex('posts').insert({
 			user_id: 1,
@@ -104,10 +111,11 @@ exports.seed = function (knex, Promise) {
 			rest_name: "TeaHaus",
 			price: 6,
 			picture_path: "/pictures/brick_toast.jpg",
+			dish_description: "Toast was stale, but the strawberries were fresh.",
 			veggie: true,
 			gluten_free: false,
 			spicy: false,
-			rating: 5
+			rating: 2
 		}),
 		knex('posts').insert({
 			user_id: 3,
@@ -117,6 +125,7 @@ exports.seed = function (knex, Promise) {
 			rest_name: "Ramen Tatsu Ya",
 			price: 9,
 			picture_path: "/pictures/ramen.jpg",
+			dish_description: "I never tried ramen before. It's like pho. It's good.",
 			veggie: false,
 			gluten_free: false,
 			spicy: true,
@@ -130,23 +139,25 @@ exports.seed = function (knex, Promise) {
 			rest_name: "Leaf",
 			price: 11,
 			picture_path: "/pictures/salad.jpg",
+			dish_description: "Yo this salad was dope.",
 			veggie: true,
 			gluten_free: true,
 			spicy: false,
 			rating: 5
 		}),
 		knex('posts').insert({
-			user_id: 2,
+			user_id: 4,
 			category: 13,
 			timestamp: "05:30:00PM",
 			dish_name: "Kiwi Spinach Smoothie",
 			rest_name: "Daily Juice",
 			price: 9,
 			picture_path: "/pictures/kiwi.jpg",
+			dish_description: "I did not like this at all.",
 			veggie: true,
 			gluten_free: true,
 			spicy: false,
-			rating: 5
+			rating: 1
 		}),
 		knex('posts').insert({
 			user_id: 2,
@@ -156,6 +167,7 @@ exports.seed = function (knex, Promise) {
 			rest_name: "JuiceLand",
 			price: 11,
 			picture_path: "/pictures/carrot.jpg",
+			dish_description: "I don't really like the taste of Carrot with Cayenne. It was ok though.",
 			veggie: true,
 			gluten_free: true,
 			spicy: true,
@@ -169,6 +181,7 @@ exports.seed = function (knex, Promise) {
 			rest_name: "Bobs Ballpark",
 			price: 5,
 			picture_path: "/pictures/spicydog.jpg",
+			dish_description: "I love a good hot-dog. Jalapeno were very spicy.",
 			veggie: false,
 			gluten_free: false,
 			spicy: true,
@@ -182,10 +195,11 @@ exports.seed = function (knex, Promise) {
 			rest_name: "King Taco",
 			price: 7,
 			picture_path: "/pictures/tacos.jpg",
+			dish_description: "No bad. I might try these again.",
 			veggie: false,
 			gluten_free: false,
 			spicy: false,
-			rating: 5
+			rating: 4
 		})
 	);
 };

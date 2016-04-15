@@ -28,7 +28,7 @@ exports.seed = function(knex, Promise) {
     knex('users').insert({
         username: 'Matt',
         name: 'Matt J Kelly',
-        profilepic: 'https://avatars2.githubusercontent.com/u/16125598'
+        profilepic: 'https://scontent-dfw1-1.xx.fbcdn.net/hphotos-xap1/v/t1.0-9/1385112_10201668016878470_1332142746_n.jpg?oh=cb98f293f62e6c1db06b83ae2a82fe6d&oe=577FBF38'
     })
   );
 };

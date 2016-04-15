@@ -117,8 +117,6 @@ class Layout extends React.Component {
       "veggie": this.state.vegClick,
       "gluten_free": this.state.gfClick,
       "spicy": this.state.spicyClick,
-      "profilepic": 'https://avatars2.githubusercontent.com/u/16125598',
-      "name": 'Matt J Kelly',
       "dish_description": this.state.dishDescription,
       "rating": this.state.dishRating
       // "bev": this.state.bevClick,
